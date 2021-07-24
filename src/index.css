@@ -37,6 +37,8 @@ main {
     background: #000;
     color: #eee;
     top: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     z-index: 3;
 }
 
