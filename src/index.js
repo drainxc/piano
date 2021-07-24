@@ -27,6 +27,18 @@ function sound(event) {
         let music = new Audio('../asset/ti.wav');
         music.play();
     }
+    if (event.key == 'k') {
+        let music = new Audio('../asset/highDo.wav');
+        music.play();
+    }
+    if (event.key == 'l') {
+        let music = new Audio('../asset/highRe.wav');
+        music.play();
+    }
+    if (event.key == ';') {
+        let music = new Audio('../asset/highMi.wav');
+        music.play();
+    }
 }
 
 document.addEventListener('keydown', sound);

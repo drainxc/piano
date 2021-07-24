@@ -5,7 +5,6 @@ body {
 main {
     display: flex;
     margin-top: 150px;
-    margin-left: 200px;
     justify-content: center;
 }
 
