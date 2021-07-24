@@ -67,3 +67,7 @@ main {
 #highDsharp {
     margin-left: 87%;
 }
+
+.decrease {
+    transform: scale(.90);
+}
