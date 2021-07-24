@@ -14,7 +14,6 @@ main {
     height: 350px;
     max-width: 880px;
     position: relative;
-    cursor: none;
 }
 
 .key {
@@ -23,7 +22,7 @@ main {
     transition: all .07s ease;
     display: block;
     box-sizing: border-box;
-    z-index: 2;
+    z-index: 1;
     float: left;
     width: 10%;
     height: 100%;
@@ -39,7 +38,7 @@ main {
     top: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    z-index: 3;
+    z-index: 2;
 }
 
 #Csharp {
