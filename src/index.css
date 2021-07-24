@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    z-index: 1;
 }
 
 main {
@@ -13,31 +14,52 @@ main {
     height: 350px;
     max-width: 880px;
     position: relative;
+    cursor: none;
 }
 
 .key {
     border: 2px solid black;
-    border-radius: .5rem;
-    transition: all .07s ease;
-    display: block;
+    border-radius: 10px;
+    transition: all .1s ease;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     float: left;
+    background-color: white;
     width: 10%;
     height: 100%;
-    background: rgba(255, 255, 255, .8);  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+span {
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.key > span {
+    color: black;
+    z-index: 4;
+}
+
+.keySharp > span {
+    color: white;
+    z-index: 4;
 }
 
 .keySharp {
     position: absolute;
+    transition: all .1s ease;
     width: 6%;
     height: 60%;
-    background: #000;
-    color: #eee;
+    background: black;
     top: 0;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    z-index: 2;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #Csharp {
@@ -69,5 +91,5 @@ main {
 }
 
 .decrease {
-    transform: scale(.90);
+    transform: scale(.95);
 }
