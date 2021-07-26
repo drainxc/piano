@@ -16,6 +16,8 @@ const highRe = document.getElementById('highD');
 const highReSharp = document.getElementById('highDsharp');
 const highMi = document.getElementById('highE');
 
+let num = 0;
+
 function soundStart(event) {
     let music;
     if (event.key == 'a') {
@@ -87,6 +89,10 @@ function soundStart(event) {
         highMi.classList.add("decrease");
     }
     music.play();
+    num++;
+    if (num > 50) {
+        location.reload();
+    }
 }
 
 function soundStop(event) {
