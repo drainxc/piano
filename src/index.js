@@ -19,76 +19,74 @@ const highMi = document.getElementById('highE');
 let num = 0;
 
 function soundStart(event) {
-    let music;
     if (event.key == 'a') {
-        music = new Audio('../asset/do.wav');
+        new Audio('../asset/do.wav').play();
         Do.classList.add("decrease");
     }
     if (event.key == 'w') {
-        music = new Audio('../asset/doSharp.wav');
+        new Audio('../asset/doSharp.wav');
         DoSharp.classList.add("decrease");
     }
     if (event.key == 's') {
-        music = new Audio('../asset/re.wav');
+        new Audio('../asset/re.wav').play();
         Re.classList.add("decrease");
     }
     if (event.key == 'e') {
-        music = new Audio('../asset/reSharp.wav');
+        new Audio('../asset/reSharp.wav').play();
         ReSharp.classList.add("decrease");
     }
     if (event.key == 'd') {
-        music = new Audio('../asset/mi.wav');
+        new Audio('../asset/mi.wav').play();
         Mi.classList.add("decrease");
     }
     if (event.key == 'f') {
-        music = new Audio('../asset/fa.wav');
+        new Audio('../asset/fa.wav').play();
         Fa.classList.add("decrease");
     }
     if (event.key == 't') {
-        music = new Audio('../asset/faSharp.wav');
+        new Audio('../asset/faSharp.wav').play();
         FaSharp.classList.add("decrease");
     }
     if (event.key == 'g') {
-        music = new Audio('../asset/so.wav');
+        new Audio('../asset/so.wav').play();
         So.classList.add("decrease");
     }
     if (event.key == 'y') {
-        music = new Audio('../asset/soSharp.wav');
+        new Audio('../asset/soSharp.wav').play();
         SoSharp.classList.add("decrease");
     }
     if (event.key == 'h') {
-        music = new Audio('../asset/la.wav');
+        new Audio('../asset/la.wav').play();
         La.classList.add("decrease");
     }
     if (event.key == 'u') {
-        music = new Audio('../asset/laSharp.wav');
+        new Audio('../asset/laSharp.wav').play();
         LaSharp.classList.add("decrease");
     }
     if (event.key == 'j') {
-        music = new Audio('../asset/ti.wav');
+        new Audio('../asset/ti.wav').play();
         Ti.classList.add("decrease");
     }
     if (event.key == 'k') {
-        music = new Audio('../asset/highDo.wav');
+        new Audio('../asset/highDo.wav').play();
         highDo.classList.add("decrease");
     }
     if (event.key == 'o') {
-        music = new Audio('../asset/highDoSharp.wav');
+        new Audio('../asset/highDoSharp.wav').play();
         highDoSharp.classList.add("decrease");
     }
     if (event.key == 'l') {
-        music = new Audio('../asset/highRe.wav');
+        new Audio('../asset/highRe.wav').play();
         highRe.classList.add("decrease");
     }
     if (event.key == 'p') {
-        music = new Audio('../asset/highReSharp.wav');
+        new Audio('../asset/highReSharp.wav').play();
         highReSharp.classList.add("decrease");
     }
     if (event.key == ';') {
-        music = new Audio('../asset/highMi.wav');
+        new Audio('../asset/highMi.wav').play();
         highMi.classList.add("decrease");
     }
-    music.play();
     num++;
     if (num > 50) {
         location.reload();
